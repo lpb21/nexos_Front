@@ -1,0 +1,23 @@
+.App {
+  display: flex; /* Usar Flexbox para el diseño */
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.product-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px; /* Añadir margen izquierdo para separar del carrito */
+  flex-grow: 1; /* Permitir que el carrusel crezca */
+}
+
+.shopping-cart {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 250px; /* Establecer un ancho fijo para el carrito */
+  margin-right: 20px; /* Añadir espacio a la derecha */
+}

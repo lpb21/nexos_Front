@@ -1,0 +1,71 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Asegúrate de que el modal esté por encima de otros elementos */
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Necesario para posicionar los menús desplegables del DatePicker */
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content form div {
+    margin-bottom: 10px;
+}
+
+.modal-content form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-content form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.modal-content form button {
+    margin-right: 10px;
+}
+
+.custom-datepicker {
+    width: 100%; /* Ajusta el ancho del DatePicker */
+    padding: 5px; /* Ajusta el padding del DatePicker */
+    font-size: 14px; /* Ajusta el tamaño de la fuente del DatePicker */
+}
+
+.react-datepicker__year-dropdown,
+.react-datepicker__month-dropdown {
+    position: absolute;
+    z-index: 1000;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-height: 200px; /* Limita la altura máxima para que no se salga de la pantalla */
+    overflow-y: auto; /* Agrega scroll si el contenido es demasiado grande */
+}
+
+.react-datepicker__year-dropdown {
+    top: 50px; /* Ajusta esta posición según sea necesario */
+    left: 0; /* Asegúrate de que el menú se alinee correctamente */
+}
+
+.react-datepicker__month-dropdown {
+    top: 50px; /* Ajusta esta posición según sea necesario */
+    left: 0; /* Asegúrate de que el menú se alinee correctamente */
+}
